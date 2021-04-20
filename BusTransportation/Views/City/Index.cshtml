@@ -1,0 +1,16 @@
+﻿@model  IReadOnlyCollection<BusTransportation.Models.CityViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+@section scripts{
+    <script src="@Url.Content("~/Scripts/jquery.city.js")"></script>
+
+}
+<h2>Index</h2>
+
+<button class="view-cities">Cities</button>
+<div class="cities-container"></div>
+<div id="content"></div>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.0/umd/react.development.js"></script>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.0/umd/react-dom.development.js"></script>
+<script src='@Url.Content("~/Scripts/app.jsx")'></script>
